@@ -14,7 +14,7 @@
 	background-image:url(carousel-assets/images/preloader.gif);
 	background-position:center;
 	background-repeat:no-repeat;
-	background-color:#FFF;
+	background-color:#F2CD5A;
 	position:absolute;
 	cursor:pointer;
 	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(white));

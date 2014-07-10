@@ -55,6 +55,9 @@ nav li{
 nav li a{
 	color:white;
 	text-decoration:none;
+	display: block;
+width: 100%;
+height: 100%;
 }
 nav, nav li span:last-child{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.61) 16%, rgba(0,0,0,0.69) 25%, rgba(91,76,31,1) 59%, rgba(192,161,66,1) 97%, rgba(239,220,98,1) 100%); /* FF3.6+ */
@@ -156,7 +159,7 @@ nav li:hover > span:first-child{
 }
 
 .container{
-	background:black;
+	background:black !important;
 	box-shadow: 0 0 30px rgba(255,255,255,.8),0 0 30px rgba(0,0,0,.9),0 0 80px rgba(255,255,255,.8), 0 0 50px yellow,0 0 100px rgba(255, 185, 10,1),0 0 100px rgba(255, 185, 10,.6),0 0 60px rgba(255, 191, 0,.7),0 0 50px rgba(255, 191, 0,.7), 0 0 50px rgba(255,255,255,.8),0 0 100px rgba(255,255,255,.6),0 0 30px rgba(255,255,255,.8),0 0 30px rgba(0,0,0,.9),0 0 80px rgba(255,255,255,.8), 0 0 50px yellow,0 0 100px rgba(255, 185, 10,1),0 0 100px rgba(255, 185, 10,.6),0 0 60px rgba(255, 191, 0,.7),0 0 50px rgba(255, 191, 0,.7), 0 0 50px rgba(255,255,255,.8),0 0 100px rgba(255,255,255,.6),0 0 30px rgba(255,255,255,.8),0 0 30px rgba(0,0,0,.9),0 0 80px rgba(255,255,255,.8), 0 0 50px yellow,0 0 100px rgba(255, 185, 10,1),0 0 100px rgba(255, 185, 10,.6),0 0 60px rgba(255, 191, 0,.7),0 0 50px rgba(255, 191, 0,.7), 0 0 50px rgba(255,255,255,.8),0 0 100px rgba(255,255,255,.6);
 	height:750px;
 	margin: 0 auto;
