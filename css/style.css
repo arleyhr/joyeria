@@ -23,11 +23,10 @@ body{
 nav{
 	position: absolute;
 	left:100%;
-<<<<<<< HEAD
+
 	top: 149px;
-=======
-	top: 164px;
->>>>>>> 752d236df9b179ec70b462365c05683cc4a62932
+
+
 	width: 100%;
 	z-index: 1;
 	-webkit-transition: all 1s ease-out;
@@ -49,10 +48,9 @@ nav li{
 	overflow: hidden;
 	text-align: center;
 	width: 12%;
-<<<<<<< HEAD
+
 	line-height: 2;
-=======
->>>>>>> 752d236df9b179ec70b462365c05683cc4a62932
+
 }
 nav li a{
 	color:white;
@@ -278,6 +276,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	margin-top: 30%;
 	width: 85%;
 }
+
 .sec .contenedor{
 	background: -moz-linear-gradient(top,  rgba(152,128,52,0.31) 5%, rgba(152,128,52,0.31) 8%, rgba(152,128,52,0.31) 9%, rgba(202,178,104,0.48) 99%, rgba(203,179,105,0.48) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,rgba(152,128,52,0.31)), color-stop(8%,rgba(152,128,52,0.31)), color-stop(9%,rgba(152,128,52,0.31)), color-stop(99%,rgba(202,178,104,0.48)), color-stop(100%,rgba(203,179,105,0.48))); /* Chrome,Safari4+ */
