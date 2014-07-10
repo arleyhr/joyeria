@@ -61,6 +61,8 @@ function appController ($scope, $http, $location, AppFactory) {
 	
 	AppFactory.a.loading($scope);
 
+	console.log($location.path())
+
 	if($location.path() != '/')
 		$('.intro,.container,nav').addClass('anim');
 
