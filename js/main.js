@@ -1,6 +1,8 @@
-$(function(){
-
-	$('#sound-box').live('click',function() {
+$(document).on('ready',function(){
+	$("#button-enter").on('click',function(){
+		$('.intro,.container,nav').addClass('anim');
+	});
+	$('#sound-box').on('click',function() {
 		$(this).toggleClass('select');
 		var m = document.getElementById('music');
 		if(m.paused)
@@ -27,7 +29,6 @@ app.factory("AppFactory",function($resource){
 		a: a
 	};
 });
-
 app.config(function($routeProvider) {
 	$routeProvider
 	.when('/Inicio', {
@@ -49,27 +50,11 @@ app.config(function($routeProvider) {
 	.when('/Contacto',{
 		templateUrl: 'views/contacto.html',
 		controller: 'appController'
-	}).
-	when('/', {
-		templateUrl: 'views/intro.html',
-		controller: 'appController'		
-	});
+	})
 	
 });
 
-function appController ($scope, $http, $location, AppFactory) {
-	
+function appController ($scope, $http, AppFactory) {
 	AppFactory.a.loading($scope);
-
-	console.log($location.path())
-
-	if($location.path() != '/')
-		$('.intro,.container,nav').addClass('anim');
-
-	
-	$scope.cargar = function(){
-		$('.intro,.container,nav').addClass('anim');
-	    $location.path('/Inicio');		
-	}
 	
 }
