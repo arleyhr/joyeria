@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Joyería de Mompox</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="app">
+	<div class="container" ng-controller="appController">
+		<nav>
+		    <ul>
+		     <li id="inicio"><span><a href="#/Inicio">INICIO</a></span><span>INICIO</span></li><!--
+		      --><li id="productos"><span><a href="#/Productos">Productos</a></span><span>Productos</span></li><!--
+		      --><li id="servicios"><span><a href="#/Servicios">Servicios</a></span><span>Servicios</span></li><!--
+		      --><li id="empresa"><span><a href="#/Empresa">La empresa</a></span><span>La empresa</span></li><!--
+		      --><li id="loc"><span><a href="#/Contacto">Localicenos</a></span><span>Localicenos</span></li>
+		    </ul>
+		</nav>
+		<div class="intro">
+			<div class="sound-box" id="sound-box"><img src="img/sound2.png" alt=""></div>
+			<div class="image-box" id="image-box">
+				<img class="shadow" src="img/shadow.png">
+				<div class="image"></div>
+			</div>
+			<div class="box-logo">
+				<img src="img/3.png" alt="">
+				<video autoplay loop>
+					<source src="video/logo.mp4" type="video/mp4" />
+					<source src="video/logo.webm" type="video/webm" />
+					<source src="video/logo.ogv" type="video/ogg" />
+				</video>
+				<div class="button-enter" id="button-enter" ng-click="cargar">
+					ENTRAR
+				</div>
+			</div>
+		</div>
+
+		<div ng-show="isViewLoading" class="loading">Cargando...</div>
+		<div ng-view class="animate-view">
+			
+		</div>
+
+		<audio id="music" autoplay loop>
+			<source src="audio/background.ogg" type="audio/ogg" />
+			<source src="audio/background.mp3" type="audio/mp3" />
+		</audio>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script type="js/cloud-carousel.1.0.5.min.js"></script>
+	<script src="js/angular.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/angular-animate.js"></script>
+	<script src="js/angular-resource.js"></script>
+	<script src="js/jquery.transit.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
