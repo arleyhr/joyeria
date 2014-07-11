@@ -1,8 +1,7 @@
 
 
 <div class="inicio sec">
-	<br>
-	<h2 class="section-title">Bienvenidos</h2>
+	<!-- <h2 class="section-title">Bienvenidos</h2> -->
 	<div >
 		<ul id="carousel">
 			<li>
@@ -71,39 +70,33 @@
 		</ul>
 
 
-		<div id="text">
-        	<p id="selected-title">Title</p>
+		<div class="desc-box" id="text">
+        	<h2 id="selected-title">Title</h2>
             <p id="selected-description">Description of the selected item</p>
         </div>
 	</div>
 </div>
 
-
-
-		
-
-
-
-
-	<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript">
 
 function onItemSelect(event) {
-		$('#text #selected-title').html(event.data.title);
-		$('#text #selected-description').html(event.data.description);
+		$('#text #selected-title, #desc-box h2').html(event.data.title);
+		$('#text #selected-description, #desc-box p').html(event.data.description);
 	}
 
 
 jQuery(document).ready(function($){
 	carousel = $('#carousel').carousel({width: 870, 
-											height: 350, 
-											itemWidth:120, 
-											horizontalRadius:270, 
-											verticalRadius:85, 
-											resize:false, 
-											scaleRatio:0.4,
-											autoScroll:true, 
-											itemSelect:onItemSelect});
+										height: 300, 
+										itemWidth:120, 
+										horizontalRadius:270, 
+										verticalRadius:85, 
+										resize:false, 
+										scaleRatio:0.4,
+										autoScroll:true, 
+										itemSelect:onItemSelect,
+										});
 											 
 		carousel.scrollToItem(0);
 
