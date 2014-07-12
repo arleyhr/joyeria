@@ -201,6 +201,10 @@ background: black;
 	display: none;
 }
 
+.carousel{
+	margin-left: -105px !important;	
+}
+
 .intro.anim .image-box{
 	background: url(../img/2.png) no-repeat center center;
 	background-size: 110px 141px;
