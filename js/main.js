@@ -59,17 +59,20 @@ app.config(function($routeProvider) {
 
 function appController ($scope, $http, $location, AppFactory) {
 	
-	AppFactory.a.loading($scope);
+	
 
 	console.log($location.path())
 
-	if($location.path() != '/')
-		$('.intro,.container,nav').addClass('anim');
+	if($location.path() != '/'){
+		$('.intro ,nav').addClass('anim');
+		AppFactory.a.loading($scope);
+	}
+	
 
 	
 	$scope.cargar = function(){
-		$('.intro,.container,nav').addClass('anim');
-	    $location.path('/Inicio');		
+		$('.intro,nav').addClass('anim');
+	    $location.path('/Inicio');
 	}
 	
 }
