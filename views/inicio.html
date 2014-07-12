@@ -1,89 +1,20 @@
 
 
-<div class="inicio sec">
-	<!-- <h2 class="section-title">Bienvenidos</h2> -->
+<div class="inicio sec" ng-controller='carouselCtrl' ng-init="getCategorys()" >
+
 	<div >
 		<ul id="carousel">
-			<li>
-				<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image1.jpg"  alt=""/>			
-				</a>
-					<p class="title">Image 1</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-				<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image2.jpg"  alt=""/>
-				
-				</a>
-				<p class="title">Image 2</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-				<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image3.jpg"  alt=""/>
-				
-				</a>  
-				<p class="title">Image 3</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>                 
-			</li>
-			<li>
-				<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image4.jpg"  alt=""/>
-				
-				</a>
-				<p class="title">Image 4</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-				<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image5.jpg"  alt=""/>
-				
-				</a>
-				<p class="title">Image 5</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-				<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image6.jpg"  alt=""/>
-				
-				</a>
-				<p class="title">Image 6</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-				<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image7.jpg"  alt=""/>
-				
-				</a>
-				<p class="title">Image 7</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-					<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image8.jpg"  alt=""/>
-				
-				</a>
-				<p class="title">Image 8</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-					<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image9.jpg"  alt=""/>
-				
-				</a>
-				<p class="title">Image 9</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			<li>
-					<a href="test-url">
-			    <img src="http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image10.jpg"  alt=""/>
+
+		
+			<li ng-model="categorys" ng-repeat="cat in categorys">
 			
-				</a>
-					<p class="title">Image 10</p>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-			</li>
-			
+				  <a href="{{cat.url}}">
+				  	 <img src="{{cat.img}}" alt="" >
+				  </a>
+				  <p class="title">{{cat.title}}</p>
+				  <p class="description">{{cat.description}}</p>
+			</li>			  
+						
 		</ul>
 
 
@@ -97,10 +28,13 @@
 <script src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript">
 
-function onItemSelect(event) {
+function descripcion(event) {
+
+	  if(!event.data) return;
 	
 		$('#text #selected-title').html(event.data.title);
 		$('#text #selected-description').html(event.data.description);
+
 	}
 
 
@@ -116,8 +50,8 @@ jQuery(document).ready(function($){
 										mouseScroll: true,
 										mouseWheel: true,
 										linkTarget : '_self',
-										itemSelect:onItemSelect,										
-        								itemMouseOver:onItemSelect,										
+										itemSelect: descripcion,										
+        								itemMouseOver: descripcion,										
 										itemClick: function(e){
 											console.log(e);
 										}

@@ -15,8 +15,11 @@
 	background-position:center;
 	background-repeat:no-repeat;
 	background-color:#F2CD5A;
+	border: 6px ridge #F2CD5A !important;
 	position:absolute;
 	cursor:pointer;
+	width: 220px;
+height: 220px;
 	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(white));
 }
 

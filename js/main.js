@@ -11,6 +11,7 @@ $(function(){
 });
 
 var app = angular.module('app',['ngRoute','ngResource','ngAnimate']);
+
 app.factory("AppFactory",function($resource){
 	a = {
 		loading: function($scope){
@@ -76,3 +77,6 @@ function appController ($scope, $http, $location, AppFactory) {
 	}
 	
 }
+
+
+app = carousel_(app);

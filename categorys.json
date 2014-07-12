@@ -1,0 +1,64 @@
+
+[
+{
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image1.jpg",
+       "title" : "Imagen 1",
+       "description" : "Descripcion imagen 1",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image2.jpg",
+       "title" : "Imagen 2",
+       "description" : "Descripcion imagen 2",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image3.jpg",
+       "title" : "Imagen 3",
+       "description" : "Descripcion imagen 3",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image4.jpg",
+       "title" : "Imagen 4",
+       "description" : "Descripcion imagen 4",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image5.jpg",
+       "title" : "Imagen 5",
+       "description" : "Descripcion imagen 5",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image6.jpg",
+       "title" : "Imagen 6",
+       "description" : "Descripcion imagen 6",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image7.jpg",
+       "title" : "Imagen 7",
+       "description" : "Descripcion imagen 7",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image8.jpg",
+       "title" : "Imagen 8",
+       "description" : "Descripcion imagen 8",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image9.jpg",
+       "title" : "Imagen 9",
+       "description" : "Descripcion imagen 9",
+       "url" : "data-url"
+   },
+   {
+       "img" : "http://bqworks.com/products/3d-carousel/3d-carousel-thumbs/image10.jpg",
+       "title" : "Imagen 10",
+       "description" : "Descripcion imagen 10",
+       "url" : "data-url"
+   }
+ ]
+ 
