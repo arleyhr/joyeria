@@ -14,7 +14,6 @@ var carousel_ = function (app){
 
                   $scope.categorys = rs;
 
-
               }); 
 
       }
@@ -41,7 +40,7 @@ var carousel_ = function (app){
            $http.get("categorys.json")
            .success(callback)
            .error(error || function(err){console.log(error);});
-
+          
        }
 
        this.products = function(callback, category, error){
