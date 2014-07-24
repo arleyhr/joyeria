@@ -1,6 +1,37 @@
-<div class="contacto sec">
+<div class="contacto sec" id="contacto">
 	<h2 class="section-title">Contactenos</h2>
 	<div class="contenedor">
-		
+		<div class="info">
+			<span>Email: lorem@ipsum</span>
+			<span>Teléfono: +385 91 524 3714</span>
+		</div>
+		<form>
+			<div>
+				<label for="name_inp">Nombre:</label>
+				<input class="name_inp" id="name_inp" type="text" placeholder="Tu nombre..." required>
+				<label for="email_inp">Email:</label>
+				<input class="email_inp" id="email_inp" type="email" placeholder="Tu email..." required>
+			</div>
+			<div>
+				<label for="message_txt">Mensaje:</label>
+				<textarea class="message_txt" id="message_txt" placeholder="Tu mensaje..."></textarea>
+			</div>
+			<div>
+				<button>Enviar</button>
+			</div>
+		</form>
+
 	</div>
+
+	<script>
+		$(function(){
+			$("#contacto input,#contacto textarea").focus(function(e){
+				$("#title-inp").addClass("anim").text(e.target.placeholder);
+			});
+			$("#contacto input,#contacto textarea").blur(function(){
+				$("#title-inp").removeClass("anim");
+			});
+		});
+
+	</script>
 </div>
