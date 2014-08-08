@@ -469,6 +469,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f988034', e
 	height:80%;
 
 }
+.sec .contenedor p,.sec .contenedor ul{
+	color:rgb(185, 184, 184);
+	font-size: 1.2em;
+	margin: 0 auto;
+	padding-top: 1em;
+	text-shadow: 0 0 4px rgba(0,0,0,.6);
+	width: 80%;
+}
+.sec .contenedor ul{
+	list-style: circle;
+}
+.sec .contenedor li{
+	margin-top: .4em;
+}
 .section-title{
 	color:#F9E182;
 	font-family: 'pristinaregular';
