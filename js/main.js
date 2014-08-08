@@ -8,10 +8,6 @@ $(function(){
 		else
 			m.pause();
 	});
-	$("#contacto input").focus(function(e){
-		console.log(e.target);
-		alert("yeah");
-	});
 });
 
 var app = angular.module('app',['ngRoute','ngResource','ngAnimate']);
